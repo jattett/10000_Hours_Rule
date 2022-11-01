@@ -36,16 +36,16 @@ function calculator(){
         result.style.display = 'flex'
         fieldResult.innerText = fieldValue.value;
         timeResult.innerText = parseInt((10000/timeValue_int), 10);
-    } , 1800);
+    } , 2000);
 }
    
 
 function openModal(){
-    modal.style.display = 'flex'
+    modal.style.display = 'flex';
 }
 
 function closeModal(){
-    modal.style.display = 'none'
+    modal.style.display = 'none';
 }
 
 window.onclick = function (event) {
@@ -67,7 +67,7 @@ function copyUrl(){
     alert("URL이 복사되었습니다.")
 }
 
-shareButton.addEventListener('click', copyUrl);
+// shareButton.addEventListener('click', copyUrl);
 openButton.addEventListener('click', openModal);
 closeButton.addEventListener('click', closeModal);
 startButton.addEventListener('click', calculator);
